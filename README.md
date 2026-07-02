@@ -6,7 +6,17 @@ A linked, interactive HTML prototype built directly from the [design system](../
 and [page blueprints](../03-design/02-page-blueprints.md). It is a **concept prototype** — real markup and
 the locked design tokens, but placeholder imagery and stubbed back-end actions (Vipps, search, login).
 
-## How to open it
+## Live shareable URL
+
+The prototype is published on GitHub Pages — share this link with anyone:
+
+**<https://monscorps.github.io/mannsforum-prototype/>**
+
+(Repo: [monscorps/mannsforum-prototype](https://github.com/monscorps/mannsforum-prototype) — public.
+To update the live site after edits: `git add -A && git commit -m "update" && git push` from this folder.
+To take it offline: delete the repo.)
+
+## How to open it locally
 
 Just open `index.html` in a browser, or serve the folder:
 
