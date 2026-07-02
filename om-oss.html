@@ -17,7 +17,7 @@
   <div class="utilrow"><div class="wrap">
     <a href="#"><i class="ti ti-search"></i> Søk</a>
     <a href="#"><i class="ti ti-user"></i> Logg inn</a>
-    <a href="#">EN</a>
+    <a href="#">English</a>
   </div></div>
   <div class="wrap"><nav class="topnav" aria-label="Hovedmeny">
     <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
@@ -29,19 +29,19 @@
       <li><a href="#">Aktuelt</a></li>
     </ul>
     <div class="nav-right">
+      <a class="navlink" href="stott-oss.html">Støtt oss</a>
       <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
       <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
-      <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
     </div>
   </nav></div>
 </header>
 
 <!-- ===== HELPLINE STATUS BANNER (drift / ute av drift) ===== -->
 <div class="statusbar statusbar--drift" role="status"><div class="wrap">
-  <i class="ti ti-circle-check"></i> <b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <i class="ti ti-phone"></i> Ring 33 33 70 00
+  <i class="ti ti-circle-check"></i> <span><b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <a href="tel:+4733337000" style="color:inherit;font-weight:600">Ring 33 33 70 00</a></span>
 </div></div>
 <div class="statusbar statusbar--ute" role="status"><div class="wrap">
-  <i class="ti ti-info-circle"></i> <b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse 116 123 · Ved fare for liv 113
+  <i class="ti ti-info-circle"></i> <span><b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse <a href="tel:116123" style="color:inherit;font-weight:600">116 123</a> · Ved fare for liv <a href="tel:113" style="color:inherit;font-weight:600">113</a></span>
 </div></div>
 
 <main id="main">
@@ -55,25 +55,25 @@
   <section class="hero hero--sand">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Om oss</span>
+        <span class="kicker">Om oss</span>
         <h1>Om MannsForum</h1>
         <p class="lead">MannsForum er en medlemsbasert organisasjon for gutter, fedre og menn. Vi jobber kunnskapsbasert for likestilling — som et supplement til likestillingsarbeidet, ikke en motvekt mot det.</p>
         <div class="actions">
-          <a class="btn btn--primary" href="#styret">Møt styret <i class="ti ti-arrow-right"></i></a>
+          <a class="btn btn--primary" href="#styret">Møt styret</a>
           <a class="btn btn--quiet" href="#apenhet">Åpenhet og regnskap</a>
         </div>
       </div>
-      <div class="ph" role="img" aria-label="Plassholder: medlemmer på årsmøte">
-        <i class="ti ti-users-group"></i><span>[Placeholder: medlemmer samlet på årsmøte — nøytralt, dokumentarisk]</span>
-      </div>
+      <figure class="ph" style="aspect-ratio:4/5;min-height:0" role="img" aria-label="Plassholder: medlemmer på årsmøte">
+        <i class="ti ti-photo"></i><figcaption>Bilde: medlemmer samlet på årsmøte — nøytralt, dokumentarisk</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Key facts -->
-  <section class="wrap section" style="padding-bottom:24px">
+  <section class="wrap section--tight section">
     <div class="grid grid-2" style="align-items:start">
       <div class="kort">
-        <h3><i class="ti ti-info-circle"></i> Kort fortalt</h3>
+        <h3>Kort fortalt</h3>
         <ul>
           <li>Stiftet 8. mars 2012</li>
           <li>Rundt 1 400 medlemmer over hele landet</li>
@@ -82,37 +82,44 @@
           <li>Driver Kamerathjelpen — likepersonstjeneste for menn</li>
         </ul>
       </div>
-      <div class="kort" style="background:var(--surface-sand)">
-        <h3><i class="ti ti-building"></i> Organisasjonsdetaljer</h3>
-        <ul style="list-style:none">
-          <li style="padding-left:26px;position:relative"><i class="ti ti-id" style="position:absolute;left:0;color:var(--brand-teal-700)"></i> Org.nr. 996 534 081</li>
-          <li style="padding-left:26px;position:relative"><i class="ti ti-map-pin" style="position:absolute;left:0;color:var(--brand-teal-700)"></i> Postboks 0000, 0000 Oslo</li>
-          <li style="padding-left:26px;position:relative"><i class="ti ti-mail" style="position:absolute;left:0;color:var(--brand-teal-700)"></i> <a href="mailto:post@mannsforum.no" style="text-decoration:none">post@mannsforum.no</a></li>
-          <li style="padding-left:26px;position:relative"><i class="ti ti-file-text" style="position:absolute;left:0;color:var(--brand-teal-700)"></i> Registrert i Frivillighetsregisteret</li>
-          <li style="padding-left:26px;position:relative"><i class="ti ti-coins" style="position:absolute;left:0;color:var(--brand-teal-700)"></i> Tilknyttet Grasrotandelen</li>
+      <div class="kort">
+        <h3>Organisasjonsdetaljer</h3>
+        <ul>
+          <li>Org.nr. 996 534 081</li>
+          <li>Postboks 0000, 0000 Oslo</li>
+          <li><a href="mailto:post@mannsforum.no">post@mannsforum.no</a></li>
+          <li>Registrert i Frivillighetsregisteret</li>
+          <li>Tilknyttet Grasrotandelen</li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Hub child-link cards -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="center" style="margin-bottom:24px"><span class="eyebrow">Om organisasjonen</span><h2>Bli bedre kjent med oss</h2></div>
-    <div class="grid grid-3">
-      <a class="gcard" href="#"><i class="ti ti-history"></i><h4>Historie og formål</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Hvordan MannsForum ble til, og hva vi arbeider for.</p><span class="go">Les mer →</span></a>
-      <a class="gcard" href="#verdigrunnlag"><i class="ti ti-compass"></i><h4>Verdigrunnlag</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Verdiene som ligger til grunn for alt vi gjør.</p><span class="go">Les mer →</span></a>
-      <a class="gcard" href="#styret"><i class="ti ti-users"></i><h4>Styret og organisasjon</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Hvem som leder og forvalter organisasjonen.</p><span class="go">Les mer →</span></a>
-      <a class="gcard" href="#"><i class="ti ti-gavel"></i><h4>Vedtekter</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Organisasjonens vedtekter, vedtatt av årsmøtet.</p><span class="go">Åpne PDF →</span></a>
-      <a class="gcard" href="#apenhet"><i class="ti ti-receipt"></i><h4>Årsmeldinger og regnskap</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Signerte regnskap og årsmeldinger år for år.</p><span class="go">Les mer →</span></a>
-      <a class="gcard" href="#"><i class="ti ti-hand-stop"></i><h4>Bli frivillig</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Vil du bidra? Slik kan du engasjere deg hos oss.</p><span class="go">Les mer →</span></a>
+  <section class="section--paper section">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="kicker">Om organisasjonen</span>
+        <h2>Bli bedre kjent med oss</h2>
+      </div>
+      <div class="grid grid-3" style="row-gap:8px">
+        <a class="gcard" href="#"><h4>Historie og formål</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Hvordan MannsForum ble til, og hva vi arbeider for.</p><span class="go">Les mer</span></a>
+        <a class="gcard" href="#verdigrunnlag"><h4>Verdigrunnlag</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Verdiene som ligger til grunn for alt vi gjør.</p><span class="go">Les mer</span></a>
+        <a class="gcard" href="#styret"><h4>Styret og organisasjon</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Hvem som leder og forvalter organisasjonen.</p><span class="go">Les mer</span></a>
+        <a class="gcard" href="#"><h4>Vedtekter</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Organisasjonens vedtekter, vedtatt av årsmøtet.</p><span class="go">Åpne PDF</span></a>
+        <a class="gcard" href="#apenhet"><h4>Årsmeldinger og regnskap</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Signerte regnskap og årsmeldinger år for år.</p><span class="go">Les mer</span></a>
+        <a class="gcard" href="#"><h4>Bli frivillig</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Vil du bidra? Slik kan du engasjere deg hos oss.</p><span class="go">Les mer</span></a>
+      </div>
     </div>
   </section>
 
   <!-- Verdigrunnlag -->
-  <section class="wrap section" id="verdigrunnlag" style="padding-top:0">
+  <section class="wrap section" id="verdigrunnlag">
     <div class="article" style="max-width:var(--measure);margin:0 auto">
-      <span class="eyebrow">Verdigrunnlag</span>
-      <h2 style="margin-top:6px">Likestilling er ikke et nullsumspill</h2>
+      <div class="sechead">
+        <span class="kicker">Verdigrunnlag</span>
+        <h2>Likestilling er ikke et nullsumspill</h2>
+      </div>
       <p>MannsForum mener at et godt samfunn krever at både kvinner og menn blir sett, hørt og ivaretatt. Å løfte fram guttenes, fedrenes og menns utfordringer går ikke på bekostning av andre — det utfyller likestillingsarbeidet. Vi tror på kunnskap framfor konflikt, og på omsorg framfor skyttergraver.</p>
       <div class="anchorquote">«Vi arbeider for at gutter, fedre og menn skal ha en tydelig stemme i likestillingsdebatten — med kunnskap og omsorg, fordi likestilling ikke er et nullsumspill.»</div>
       <p>I praksis betyr det at vi bygger arbeidet på forskning og dokumentasjon, møter den enkelte med respekt, og fremmer løsninger som er til barnets og familiens beste. Vi tar avstand fra hat og polarisering — målet er et mer rettferdig samfunn for alle.</p>
@@ -121,131 +128,158 @@
 
   <!-- Impact / trust stat trio -->
   <section class="impactband section">
-    <div class="wrap grid grid-3">
-      <div class="stat"><div class="stat__num">6 500</div><div class="stat__lbl">kontakter med menn i krise</div><div class="stat__src">Kilde: MannsForum årsmelding 2024</div></div>
-      <div class="stat"><div class="stat__num">~1 400</div><div class="stat__lbl">medlemmer over hele landet</div><div class="stat__src">Kilde: MannsForum, 2025</div></div>
-      <div class="stat"><div class="stat__num">Siden 2013</div><div class="stat__lbl">offisiell høringsinstans</div><div class="stat__src">Kilde: MannsForum</div></div>
+    <div class="wrap">
+      <div class="sechead"><span class="kicker">Arbeidet vårt i tall</span></div>
+      <div class="grid grid-3">
+        <div class="stat"><div class="stat__num">6 500</div><div class="stat__lbl">kontakter med menn i krise</div><div class="stat__src">Kilde: MannsForum årsmelding 2024</div></div>
+        <div class="stat"><div class="stat__num">~1 400</div><div class="stat__lbl">medlemmer over hele landet</div><div class="stat__src">Kilde: MannsForum, 2025</div></div>
+        <div class="stat"><div class="stat__num">Siden 2013</div><div class="stat__lbl">offisiell høringsinstans</div><div class="stat__src">Kilde: MannsForum</div></div>
+      </div>
     </div>
   </section>
 
   <!-- Styret -->
   <section class="wrap section" id="styret">
-    <div class="center" style="margin-bottom:24px"><span class="eyebrow">Styret og organisasjon</span><h2>Menneskene bak MannsForum</h2><p class="lead" style="max-width:640px;margin:8px auto 0">Styret velges av årsmøtet og er ansvarlig for driften. Vi bruker rollebaserte e-postadresser av hensyn til personvern.</p></div>
-    <div class="grid grid-3">
+    <div class="sechead">
+      <span class="kicker">Styret og organisasjon</span>
+      <h2>Menneskene bak MannsForum</h2>
+      <p class="sub">Styret velges av årsmøtet og er ansvarlig for driften. Vi bruker rollebaserte e-postadresser av hensyn til personvern.</p>
+    </div>
+    <div class="grid grid-3" style="row-gap:8px">
 
-      <div class="tcard" style="text-align:center">
-        <div class="ph" role="img" aria-label="Navn Navnesen, styreleder" style="min-height:170px;margin-bottom:12px"><i class="ti ti-user"></i><span>[PLACEHOLDER: board portrait — styreleder, nøytral bakgrunn; alt: «Navn Navnesen, styreleder»]</span></div>
+      <div class="tcard">
+        <figure class="ph" style="aspect-ratio:4/3;min-height:0;margin-bottom:16px" role="img" aria-label="Navn Navnesen, styreleder">
+          <i class="ti ti-photo"></i><figcaption>Bilde: portrett av styreleder — nøytral bakgrunn</figcaption>
+        </figure>
         <h3>Navn Navnesen</h3>
         <p>Styreleder</p>
-        <a href="mailto:styreleder@mannsforum.no" class="cite" style="margin-top:8px;display:inline-block">styreleder@mannsforum.no</a>
+        <a class="cite" href="mailto:styreleder@mannsforum.no" style="margin-top:10px;display:inline-block">styreleder@mannsforum.no</a>
       </div>
 
-      <div class="tcard" style="text-align:center">
-        <div class="ph" role="img" aria-label="Navn Navnesen, nestleder" style="min-height:170px;margin-bottom:12px"><i class="ti ti-user"></i><span>[PLACEHOLDER: board portrait — nestleder, nøytral bakgrunn; alt: «Navn Navnesen, nestleder»]</span></div>
+      <div class="tcard">
+        <figure class="ph" style="aspect-ratio:4/3;min-height:0;margin-bottom:16px" role="img" aria-label="Navn Navnesen, nestleder">
+          <i class="ti ti-photo"></i><figcaption>Bilde: portrett av nestleder — nøytral bakgrunn</figcaption>
+        </figure>
         <h3>Navn Navnesen</h3>
         <p>Nestleder</p>
-        <a href="mailto:nestleder@mannsforum.no" class="cite" style="margin-top:8px;display:inline-block">nestleder@mannsforum.no</a>
+        <a class="cite" href="mailto:nestleder@mannsforum.no" style="margin-top:10px;display:inline-block">nestleder@mannsforum.no</a>
       </div>
 
-      <div class="tcard" style="text-align:center">
-        <div class="ph" role="img" aria-label="Navn Navnesen, ansvarlig redaktør" style="min-height:170px;margin-bottom:12px"><i class="ti ti-user"></i><span>[PLACEHOLDER: board portrait — ansvarlig redaktør, nøytral bakgrunn; alt: «Navn Navnesen, ansvarlig redaktør»]</span></div>
+      <div class="tcard">
+        <figure class="ph" style="aspect-ratio:4/3;min-height:0;margin-bottom:16px" role="img" aria-label="Navn Navnesen, ansvarlig redaktør">
+          <i class="ti ti-photo"></i><figcaption>Bilde: portrett av ansvarlig redaktør — nøytral bakgrunn</figcaption>
+        </figure>
         <h3>Navn Navnesen</h3>
         <p>Ansvarlig redaktør</p>
-        <a href="mailto:redaktor@mannsforum.no" class="cite" style="margin-top:8px;display:inline-block">redaktor@mannsforum.no</a>
+        <a class="cite" href="mailto:redaktor@mannsforum.no" style="margin-top:10px;display:inline-block">redaktor@mannsforum.no</a>
       </div>
 
-      <div class="tcard" style="text-align:center">
-        <div class="ph" role="img" aria-label="Navn Navnesen, kasserer" style="min-height:170px;margin-bottom:12px"><i class="ti ti-user"></i><span>[PLACEHOLDER: board portrait — kasserer, nøytral bakgrunn; alt: «Navn Navnesen, kasserer»]</span></div>
+      <div class="tcard">
+        <figure class="ph" style="aspect-ratio:4/3;min-height:0;margin-bottom:16px" role="img" aria-label="Navn Navnesen, kasserer">
+          <i class="ti ti-photo"></i><figcaption>Bilde: portrett av kasserer — nøytral bakgrunn</figcaption>
+        </figure>
         <h3>Navn Navnesen</h3>
         <p>Kasserer</p>
-        <a href="mailto:kasserer@mannsforum.no" class="cite" style="margin-top:8px;display:inline-block">kasserer@mannsforum.no</a>
+        <a class="cite" href="mailto:kasserer@mannsforum.no" style="margin-top:10px;display:inline-block">kasserer@mannsforum.no</a>
       </div>
 
-      <div class="tcard" style="text-align:center">
-        <div class="ph" role="img" aria-label="Navn Navnesen, styremedlem" style="min-height:170px;margin-bottom:12px"><i class="ti ti-user"></i><span>[PLACEHOLDER: board portrait — styremedlem, nøytral bakgrunn; alt: «Navn Navnesen, styremedlem»]</span></div>
+      <div class="tcard">
+        <figure class="ph" style="aspect-ratio:4/3;min-height:0;margin-bottom:16px" role="img" aria-label="Navn Navnesen, styremedlem">
+          <i class="ti ti-photo"></i><figcaption>Bilde: portrett av styremedlem — nøytral bakgrunn</figcaption>
+        </figure>
         <h3>Navn Navnesen</h3>
         <p>Styremedlem</p>
-        <a href="mailto:styret@mannsforum.no" class="cite" style="margin-top:8px;display:inline-block">styret@mannsforum.no</a>
+        <a class="cite" href="mailto:styret@mannsforum.no" style="margin-top:10px;display:inline-block">styret@mannsforum.no</a>
       </div>
 
-      <div class="tcard" style="text-align:center">
-        <div class="ph" role="img" aria-label="Navn Navnesen, styremedlem" style="min-height:170px;margin-bottom:12px"><i class="ti ti-user"></i><span>[PLACEHOLDER: board portrait — styremedlem, nøytral bakgrunn; alt: «Navn Navnesen, styremedlem»]</span></div>
+      <div class="tcard">
+        <figure class="ph" style="aspect-ratio:4/3;min-height:0;margin-bottom:16px" role="img" aria-label="Navn Navnesen, styremedlem">
+          <i class="ti ti-photo"></i><figcaption>Bilde: portrett av styremedlem — nøytral bakgrunn</figcaption>
+        </figure>
         <h3>Navn Navnesen</h3>
         <p>Styremedlem</p>
-        <a href="mailto:styret@mannsforum.no" class="cite" style="margin-top:8px;display:inline-block">styret@mannsforum.no</a>
+        <a class="cite" href="mailto:styret@mannsforum.no" style="margin-top:10px;display:inline-block">styret@mannsforum.no</a>
       </div>
 
     </div>
   </section>
 
   <!-- Åpenhet og regnskap (document index) -->
-  <section class="wrap section" id="apenhet" style="padding-top:0">
-    <div class="center" style="margin-bottom:20px"><span class="eyebrow">Åpenhet og finansiering</span><h2>Åpenhet og regnskap</h2><p class="lead" style="max-width:680px;margin:8px auto 0">Vi finansieres av medlemskontingent, gaver og offentlige tilskudd. Her finner du signerte regnskap og årsmeldinger år for år.</p></div>
+  <section class="section--paper section" id="apenhet">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="kicker">Åpenhet og finansiering</span>
+        <h2>Åpenhet og regnskap</h2>
+        <p class="sub">Vi finansieres av medlemskontingent, gaver og offentlige tilskudd. Her finner du signerte regnskap og årsmeldinger år for år.</p>
+      </div>
 
-    <div class="kort" style="background:#fff;border:1px solid var(--neutral-300);padding:0;max-width:720px;margin:0 auto">
-      <div style="display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--neutral-300)">
-        <div class="tcard__ic" style="margin:0;flex-shrink:0"><i class="ti ti-file-text"></i></div>
-        <div style="flex:1"><div style="font-weight:600;color:var(--brand-teal-900)">Årsmelding og regnskap 2025</div><div style="font-size:13px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
-        <a class="cite" href="#" style="white-space:nowrap"><i class="ti ti-download"></i> PDF, 410 kB</a>
+      <div style="max-width:720px;border-top:1px solid var(--ink)">
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--hairline)">
+          <div style="flex:1"><div style="font-family:var(--font-head);font-weight:600;color:var(--ink)">Årsmelding og regnskap 2025</div><div style="font-size:13.5px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
+          <a class="cite" href="#" style="white-space:nowrap">PDF, 410 kB</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--hairline)">
+          <div style="flex:1"><div style="font-family:var(--font-head);font-weight:600;color:var(--ink)">Årsmelding og regnskap 2024</div><div style="font-size:13.5px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
+          <a class="cite" href="#" style="white-space:nowrap">PDF, 388 kB</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--hairline)">
+          <div style="flex:1"><div style="font-family:var(--font-head);font-weight:600;color:var(--ink)">Årsmelding og regnskap 2023</div><div style="font-size:13.5px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
+          <a class="cite" href="#" style="white-space:nowrap">PDF, 372 kB</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--hairline)">
+          <div style="flex:1"><div style="font-family:var(--font-head);font-weight:600;color:var(--ink)">Årsmelding og regnskap 2022</div><div style="font-size:13.5px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
+          <a class="cite" href="#" style="white-space:nowrap">PDF, 351 kB</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--hairline)">
+          <div style="flex:1"><div style="font-family:var(--font-head);font-weight:600;color:var(--ink)">Eldre årsmeldinger (2018–2021)</div><div style="font-size:13.5px;color:var(--neutral-500)">Samlet arkiv over tidligere år</div></div>
+          <a class="arrow-link" href="#" style="white-space:nowrap">Se arkiv</a>
+        </div>
       </div>
-      <div style="display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--neutral-300)">
-        <div class="tcard__ic" style="margin:0;flex-shrink:0"><i class="ti ti-file-text"></i></div>
-        <div style="flex:1"><div style="font-weight:600;color:var(--brand-teal-900)">Årsmelding og regnskap 2024</div><div style="font-size:13px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
-        <a class="cite" href="#" style="white-space:nowrap"><i class="ti ti-download"></i> PDF, 388 kB</a>
-      </div>
-      <div style="display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--neutral-300)">
-        <div class="tcard__ic" style="margin:0;flex-shrink:0"><i class="ti ti-file-text"></i></div>
-        <div style="flex:1"><div style="font-weight:600;color:var(--brand-teal-900)">Årsmelding og regnskap 2023</div><div style="font-size:13px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
-        <a class="cite" href="#" style="white-space:nowrap"><i class="ti ti-download"></i> PDF, 372 kB</a>
-      </div>
-      <div style="display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--neutral-300)">
-        <div class="tcard__ic" style="margin:0;flex-shrink:0"><i class="ti ti-file-text"></i></div>
-        <div style="flex:1"><div style="font-weight:600;color:var(--brand-teal-900)">Årsmelding og regnskap 2022</div><div style="font-size:13px;color:var(--neutral-500)">Signert årsregnskap og styrets beretning</div></div>
-        <a class="cite" href="#" style="white-space:nowrap"><i class="ti ti-download"></i> PDF, 351 kB</a>
-      </div>
-      <div style="display:flex;align-items:center;gap:14px;padding:14px 20px">
-        <div class="tcard__ic" style="margin:0;flex-shrink:0"><i class="ti ti-file-text"></i></div>
-        <div style="flex:1"><div style="font-weight:600;color:var(--brand-teal-900)">Eldre årsmeldinger (2018–2021)</div><div style="font-size:13px;color:var(--neutral-500)">Samlet arkiv over tidligere år</div></div>
-        <a class="cite" href="#" style="white-space:nowrap"><i class="ti ti-folder"></i> Se arkiv →</a>
-      </div>
-    </div>
 
-    <!-- Neutrality / finances callout -->
-    <div class="callout callout--info" style="max-width:720px;margin:20px auto 0">
-      <i class="ti ti-scale"></i>
-      <div><b>Nøytralitet og uavhengighet.</b> MannsForum er partipolitisk og religiøst uavhengig. Vi mottar ikke øremerkede midler som binder vårt standpunkt, og vi gjør rede for finansieringen vår i de årlige regnskapene over.</div>
+      <!-- Neutrality / finances callout -->
+      <div class="callout callout--info" style="max-width:720px;margin-top:28px">
+        <i class="ti ti-scale"></i>
+        <div><b>Nøytralitet og uavhengighet.</b> MannsForum er partipolitisk og religiøst uavhengig. Vi mottar ikke øremerkede midler som binder vårt standpunkt, og vi gjør rede for finansieringen vår i de årlige regnskapene over.</div>
+      </div>
     </div>
   </section>
 
   <!-- Statements / governance links -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="grid grid-3">
-      <a class="gcard" href="#"><i class="ti ti-gavel"></i><h4>Vedtekter</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Organisasjonens vedtekter (PDF).</p><span class="go">Åpne PDF →</span></a>
-      <a class="gcard" href="#"><i class="ti ti-accessible"></i><h4>Tilgjengelighetserklæring</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Hvordan nettstedet oppfyller kravene til universell utforming.</p><span class="go">Les erklæringen →</span></a>
-      <a class="gcard" href="#"><i class="ti ti-shield-lock"></i><h4>Personvern</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Slik behandler og beskytter vi personopplysninger.</p><span class="go">Les mer →</span></a>
+  <section class="wrap section">
+    <div class="sechead"><span class="kicker">Styringsdokumenter</span></div>
+    <div class="grid grid-3" style="row-gap:8px">
+      <a class="gcard" href="#"><h4>Vedtekter</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Organisasjonens vedtekter (PDF).</p><span class="go">Åpne PDF</span></a>
+      <a class="gcard" href="#"><h4>Tilgjengelighetserklæring</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Hvordan nettstedet oppfyller kravene til universell utforming.</p><span class="go">Les erklæringen</span></a>
+      <a class="gcard" href="#"><h4>Personvern</h4><p style="font-size:14px;color:var(--neutral-500);margin:6px 0 0">Slik behandler og beskytter vi personopplysninger.</p><span class="go">Les mer</span></a>
     </div>
   </section>
 
   <!-- Soft supporter CTA -->
   <section class="wrap section" style="padding-top:0">
-    <div class="softcta center" style="flex-direction:column;text-align:center">
-      <div class="t"><h3>Vil du støtte arbeidet?</h3><p>Som medlem er du med på å holde Kamerathjelpen åpen og gi gutter, fedre og menn en tydelig stemme. Fra 200 kr i året.</p></div>
-      <div class="actions" style="justify-content:center"><a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a><a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a></div>
+    <div class="softcta">
+      <div class="t">
+        <h3>Vil du støtte arbeidet?</h3>
+        <p>Som medlem er du med på å holde Kamerathjelpen åpen og gi gutter, fedre og menn en tydelig stemme. Fra 200 kr i året.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
+        <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
+      </div>
     </div>
   </section>
 
   <!-- Last-updated stamp -->
-  <div class="wrap"><div class="stamp"><i class="ti ti-calendar"></i> Sist oppdatert 12. juni 2026 · Organisasjonsopplysninger hentet fra Frivillighetsregisteret og MannsForums årsmeldinger.</div></div>
+  <div class="wrap"><div class="stamp">Sist oppdatert 12. juni 2026 · Organisasjonsopplysninger hentet fra Frivillighetsregisteret og MannsForums årsmeldinger.</div></div>
 
 </main>
 
 <!-- Trust band -->
 <div class="trustband"><div class="wrap">
-  <span><i class="ti ti-building"></i> Org.nr. 996 534 081</span>
-  <span><i class="ti ti-map-pin"></i> Oslo</span>
+  <span>Org.nr. 996 534 081</span>
+  <span>Oslo</span>
   <span class="badge">Offisiell høringsinstans</span>
-  <span><i class="ti ti-file-text"></i> Åpenhet og regnskap</span>
-  <span class="badge">Grasrotandelen</span>
+  <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+  <span>Grasrotandelen</span>
 </div></div>
 
 <!-- ===== SHARED FOOTER ===== -->
@@ -253,7 +287,7 @@
   <div class="foot-grid">
     <div>
       <div class="foot-brand">MannsForum</div>
-      <p class="foot-org">For gutter, fedre og menn.<br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
+      <p class="foot-org">Norges største likestillingsorganisasjon<br>for gutter, fedre og menn.<br><br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
     </div>
     <div><h4>Få hjelp</h4><a href="fa-hjelp.html">Få hjelp</a><a href="kamerathjelpen.html">Kamerathjelpen</a><a href="krisetelefoner.html">Krisetelefoner</a></div>
     <div><h4>Organisasjonen</h4><a href="om-oss.html">Om oss</a><a href="om-oss.html">Åpenhet og regnskap</a><a href="#">Bli frivillig</a><a href="#">For presse</a></div>
@@ -261,7 +295,7 @@
   </div>
   <div class="foot-strip">
     <span>© <span data-year>2026</span> MannsForum</span>
-    <span><a href="#" style="display:inline">Personvern</a> · <a href="#" style="display:inline">Tilgjengelighet</a> · <a href="#" style="display:inline">Informasjonskapsler</a></span>
+    <span><a href="#">Personvern</a> · <a href="#">Tilgjengelighet</a> · <a href="#">Informasjonskapsler</a></span>
   </div>
 </div></footer>
 

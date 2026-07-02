@@ -17,7 +17,7 @@
   <div class="utilrow"><div class="wrap">
     <a href="#"><i class="ti ti-search"></i> Søk</a>
     <a href="#"><i class="ti ti-user"></i> Logg inn</a>
-    <a href="#">EN</a>
+    <a href="#">English</a>
   </div></div>
   <div class="wrap"><nav class="topnav" aria-label="Hovedmeny">
     <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
@@ -29,19 +29,19 @@
       <li><a href="#">Aktuelt</a></li>
     </ul>
     <div class="nav-right">
+      <a class="navlink" href="stott-oss.html">Støtt oss</a>
       <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
       <a class="btn btn--amber" href="bli-medlem.html" aria-current="page">Bli medlem</a>
-      <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
     </div>
   </nav></div>
 </header>
 
 <!-- ===== HELPLINE STATUS BANNER (drift / ute av drift) ===== -->
 <div class="statusbar statusbar--drift" role="status"><div class="wrap">
-  <i class="ti ti-circle-check"></i> <b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <i class="ti ti-phone"></i> Ring 33 33 70 00
+  <i class="ti ti-circle-check"></i> <span><b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <a href="tel:+4733337000" style="color:inherit;font-weight:600">Ring 33 33 70 00</a></span>
 </div></div>
 <div class="statusbar statusbar--ute" role="status"><div class="wrap">
-  <i class="ti ti-info-circle"></i> <b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse 116 123 · Ved fare for liv 113
+  <i class="ti ti-info-circle"></i> <span><b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse <a href="tel:116123" style="color:inherit;font-weight:600">116 123</a> · Ved fare for liv <a href="tel:113" style="color:inherit;font-weight:600">113</a></span>
 </div></div>
 
 <main id="main">
@@ -55,35 +55,33 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Bli medlem</span>
+        <span class="kicker">Medlemskap</span>
         <h1>Bli medlem av MannsForum</h1>
         <p class="lead">Som medlem er du med på å holde Kamerathjelpen åpen og gi gutter, fedre og menn en tydelig stemme. Likestilling er ikke et nullsumspill.</p>
         <div class="actions">
-          <a class="btn btn--amber" href="#join">Meld deg inn <i class="ti ti-arrow-right"></i></a>
+          <a class="btn btn--amber" href="#join">Meld deg inn</a>
           <a class="btn btn--quiet" href="om-oss.html">Bli kjent med oss</a>
         </div>
       </div>
-      <div class="ph" role="img" aria-label="Plassholder: gruppe menn i samtale, fellesskap. Alt: Medlemmer i samtale">
-        <i class="ti ti-photo"></i><span>[Placeholder: warm photo — gruppe menn i samtale, fellesskap; alt: "Medlemmer i samtale"]</span>
-      </div>
+      <figure class="ph" style="aspect-ratio:4/3;min-height:0" role="img" aria-label="Plassholder: gruppe menn i samtale, fellesskap">
+        <i class="ti ti-photo"></i><figcaption>Bilde: gruppe menn i samtale — fellesskap, varmt naturlig lys</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Condensed trust strip near the top -->
-  <section class="wrap" style="padding-bottom:8px">
-    <div class="trustband" style="border:1px solid var(--neutral-300);border-radius:12px">
-      <span><i class="ti ti-building"></i> Org.nr. 996 534 081</span>
-      <span class="badge">Offisiell høringsinstans siden 2013</span>
-      <span><i class="ti ti-file-text"></i> Åpenhet og regnskap</span>
-      <span><i class="ti ti-users-group"></i> Styre og vedtekter</span>
-      <span><i class="ti ti-scale-outline"></i> Likestilling er ikke et nullsumspill</span>
-    </div>
-  </section>
+  <div class="trustband" style="border-bottom:1px solid var(--hairline)"><div class="wrap">
+    <span>Org.nr. 996 534 081</span>
+    <span class="badge">Offisiell høringsinstans siden 2013</span>
+    <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+    <span><a href="om-oss.html" style="color:inherit">Styre og vedtekter</a></span>
+    <span>Likestilling er ikke et nullsumspill</span>
+  </div></div>
 
   <!-- Tier cards -->
-  <section class="wrap section" style="padding-top:24px">
-    <div class="center" style="margin-bottom:24px">
-      <span class="eyebrow">Velg medlemskap</span>
+  <section class="wrap section">
+    <div class="sechead">
+      <span class="kicker">Velg medlemskap</span>
       <h2>Tre måter å være med på</h2>
     </div>
     <div class="tiers">
@@ -129,25 +127,25 @@
   </section>
 
   <!-- "Hva kontingenten din finansierer" explainer -->
-  <section class="impactband section">
+  <section class="section--paper section">
     <div class="wrap">
-      <div class="center" style="margin-bottom:24px">
-        <span class="eyebrow">Hva pengene går til</span>
+      <div class="sechead">
+        <span class="kicker">Hva pengene går til</span>
         <h2>Hva kontingenten din finansierer</h2>
       </div>
-      <div class="grid grid-3">
-        <div class="kort">
-          <div class="tcard__ic"><i class="ti ti-phone-call"></i></div>
+      <div class="grid grid-3" style="row-gap:8px">
+        <div class="tcard">
+          <span class="tcard__num">01</span>
           <h3>Kamerathjelpen</h3>
           <p>En mann i den andre enden — anonymt og uten å dømme. Kontingenten holder linjen åpen.</p>
         </div>
-        <div class="kort">
-          <div class="tcard__ic"><i class="ti ti-file-text"></i></div>
+        <div class="tcard">
+          <span class="tcard__num">02</span>
           <h3>Høringssvar</h3>
           <p>Vi gir gutter, fedre og menn en tydelig stemme i politikk og lovarbeid som offisiell høringsinstans.</p>
         </div>
-        <div class="kort">
-          <div class="tcard__ic"><i class="ti ti-book"></i></div>
+        <div class="tcard">
+          <span class="tcard__num">03</span>
           <h3>Kunnskap og veiledere</h3>
           <p>Rolig, etterprøvbar veiledning om samvær, økonomi og psykisk helse — gratis og åpent for alle.</p>
         </div>
@@ -156,11 +154,11 @@
   </section>
 
   <!-- On-site join flow -->
-  <section class="wrap section" id="join" style="padding-top:0">
-    <div class="center" style="margin-bottom:24px">
-      <span class="eyebrow">Meld deg inn</span>
+  <section class="wrap section" id="join">
+    <div class="sechead sechead--center">
+      <span class="kicker">Meld deg inn</span>
       <h2>Bli medlem på minuttet</h2>
-      <p class="lead">Fyll ut, velg betaling og fullfør med Vipps. Du blir ikke sendt til noen ekstern portal.</p>
+      <p class="sub">Fyll ut, velg betaling og fullfør med Vipps. Du blir ikke sendt til noen ekstern portal.</p>
     </div>
 
     <form class="joinflow" action="#" method="post" novalidate>
@@ -168,7 +166,7 @@
       <div class="jb">
 
         <fieldset style="border:0;padding:0;margin:0">
-          <legend class="field" style="font-size:13px;font-weight:600;color:#33414a;margin-bottom:8px">Velg medlemskap</legend>
+          <legend style="font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px;letter-spacing:.02em">Velg medlemskap</legend>
           <div class="pay">
             <label class="pr sel"><span class="rd"></span><input type="radio" name="tier" value="fullt" checked hidden> Fullt — 200 kr</label>
             <label class="pr"><span class="rd"></span><input type="radio" name="tier" value="stotte" hidden> Støtte — 200 kr</label>
@@ -187,7 +185,7 @@
         </div>
 
         <fieldset style="border:0;padding:0;margin:0">
-          <legend class="field" style="font-size:13px;font-weight:600;color:#33414a;margin-bottom:8px">Betalingsmåte</legend>
+          <legend style="font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px;letter-spacing:.02em">Betalingsmåte</legend>
           <div class="pay">
             <label class="pr sel"><span class="rd"></span><input type="radio" name="betaling" value="vipps-fast" checked hidden> Vipps (gjentakende)</label>
             <label class="pr"><span class="rd"></span><input type="radio" name="betaling" value="vipps-engang" hidden> Vipps (engangs)</label>
@@ -200,7 +198,7 @@
           Ja, send meg MannsForums nyhetsbrev (valgfritt).
         </label>
 
-        <button class="btn btn--amber btn--block" type="submit"><i class="ti ti-brand-vinted"></i> Bli medlem med Vipps</button>
+        <button class="btn btn--amber btn--block" type="submit">Bli medlem med Vipps</button>
 
         <p class="micro"><i class="ti ti-lock"></i> Trygg betaling med Vipps. Vi selger aldri opplysningene dine.</p>
 
@@ -208,8 +206,8 @@
     </form>
 
     <!-- Existing-member path -->
-    <p class="center" style="margin-top:18px;color:var(--neutral-500);font-size:15px">
-      Er du allerede medlem? <a href="#" style="font-weight:600;color:var(--brand-teal-700);text-decoration:none">Logg inn på Min side.</a>
+    <p class="center" style="margin-top:22px;color:var(--neutral-500);font-size:15px">
+      Er du allerede medlem? <a class="arrow-link" href="#">Logg inn på Min side</a>
     </p>
 
     <!-- Crisis fallback — visible in BOTH helpline states -->
@@ -224,29 +222,40 @@
   </section>
 
   <!-- FAQ -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="center" style="margin-bottom:16px"><span class="eyebrow">Spørsmål og svar</span><h2>Vanlige spørsmål om medlemskap</h2></div>
-    <div class="faq" style="max-width:680px;margin:0 auto">
-      <details>
-        <summary>Hvordan sier jeg opp medlemskapet? <i class="ti ti-chevron-down"></i></summary>
-        <div class="faq__a">Du kan si opp når som helst på Min side, eller ved å sende oss en e-post til post@mannsforum.no. Et gjentakende Vipps-trekk stopper du selv i Vipps-appen.</div>
-      </details>
-      <details>
-        <summary>Får jeg kvittering? <i class="ti ti-chevron-down"></i></summary>
-        <div class="faq__a">Ja. Du får en bekreftelse på e-post med en gang betalingen er fullført, og kvitteringene dine ligger samlet på Min side.</div>
-      </details>
-      <details>
-        <summary>Er bidraget skattefradragsberettiget? <i class="ti ti-chevron-down"></i></summary>
-        <div class="faq__a">Medlemskontingent gir normalt ikke skattefradrag. Vil du gi en gave med mulig fradrag, finner du mer på <a href="stott-oss.html" style="color:var(--brand-teal-700);font-weight:600;text-decoration:none">Støtt oss</a>.</div>
-      </details>
+  <section class="section--paper section">
+    <div class="wrap">
+      <div class="sechead sechead--center">
+        <span class="kicker">Spørsmål og svar</span>
+        <h2>Vanlige spørsmål om medlemskap</h2>
+      </div>
+      <div class="faq" style="max-width:680px;margin:0 auto">
+        <details>
+          <summary>Hvordan sier jeg opp medlemskapet? <i class="ti ti-chevron-down"></i></summary>
+          <div class="faq__a">Du kan si opp når som helst på Min side, eller ved å sende oss en e-post til post@mannsforum.no. Et gjentakende Vipps-trekk stopper du selv i Vipps-appen.</div>
+        </details>
+        <details>
+          <summary>Får jeg kvittering? <i class="ti ti-chevron-down"></i></summary>
+          <div class="faq__a">Ja. Du får en bekreftelse på e-post med en gang betalingen er fullført, og kvitteringene dine ligger samlet på Min side.</div>
+        </details>
+        <details>
+          <summary>Er bidraget skattefradragsberettiget? <i class="ti ti-chevron-down"></i></summary>
+          <div class="faq__a">Medlemskontingent gir normalt ikke skattefradrag. Vil du gi en gave med mulig fradrag, finner du mer på <a href="stott-oss.html">Støtt oss</a>.</div>
+        </details>
+      </div>
     </div>
   </section>
 
   <!-- Soft CTA -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="softcta center" style="flex-direction:column;text-align:center">
-      <div class="t"><h3>Vil du heller gi en gave?</h3><p>Du trenger ikke være medlem for å bidra. Hver krone styrker hjelpetilbudet og arbeidet for gutter, fedre og menn.</p></div>
-      <div class="actions" style="justify-content:center"><a class="btn btn--amber" href="stott-oss.html">Støtt oss</a><a class="btn btn--quiet" href="om-oss.html">Les om arbeidet</a></div>
+  <section class="wrap section">
+    <div class="softcta">
+      <div class="t">
+        <h3>Vil du heller gi en gave?</h3>
+        <p>Du trenger ikke være medlem for å bidra. Hver krone styrker hjelpetilbudet og arbeidet for gutter, fedre og menn.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn--amber" href="stott-oss.html">Støtt oss</a>
+        <a class="btn btn--quiet" href="om-oss.html">Les om arbeidet</a>
+      </div>
     </div>
   </section>
 
@@ -254,11 +263,11 @@
 
 <!-- Trust band -->
 <div class="trustband"><div class="wrap">
-  <span><i class="ti ti-building"></i> Org.nr. 996 534 081</span>
-  <span><i class="ti ti-map-pin"></i> Oslo</span>
+  <span>Org.nr. 996 534 081</span>
+  <span>Oslo</span>
   <span class="badge">Offisiell høringsinstans</span>
-  <span><i class="ti ti-file-text"></i> Åpenhet og regnskap</span>
-  <span class="badge">Grasrotandelen</span>
+  <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+  <span>Grasrotandelen</span>
 </div></div>
 
 <!-- ===== SHARED FOOTER ===== -->
@@ -266,7 +275,7 @@
   <div class="foot-grid">
     <div>
       <div class="foot-brand">MannsForum</div>
-      <p class="foot-org">For gutter, fedre og menn.<br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
+      <p class="foot-org">Norges største likestillingsorganisasjon<br>for gutter, fedre og menn.<br><br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
     </div>
     <div><h4>Få hjelp</h4><a href="fa-hjelp.html">Få hjelp</a><a href="kamerathjelpen.html">Kamerathjelpen</a><a href="krisetelefoner.html">Krisetelefoner</a></div>
     <div><h4>Organisasjonen</h4><a href="om-oss.html">Om oss</a><a href="om-oss.html">Åpenhet og regnskap</a><a href="#">Bli frivillig</a><a href="#">For presse</a></div>
@@ -274,7 +283,7 @@
   </div>
   <div class="foot-strip">
     <span>© <span data-year>2026</span> MannsForum</span>
-    <span><a href="#" style="display:inline">Personvern</a> · <a href="#" style="display:inline">Tilgjengelighet</a> · <a href="#" style="display:inline">Informasjonskapsler</a></span>
+    <span><a href="#">Personvern</a> · <a href="#">Tilgjengelighet</a> · <a href="#">Informasjonskapsler</a></span>
   </div>
 </div></footer>
 

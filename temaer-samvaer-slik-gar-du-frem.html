@@ -17,7 +17,7 @@
   <div class="utilrow"><div class="wrap">
     <a href="#"><i class="ti ti-search"></i> Søk</a>
     <a href="#"><i class="ti ti-user"></i> Logg inn</a>
-    <a href="#">EN</a>
+    <a href="#">English</a>
   </div></div>
   <div class="wrap"><nav class="topnav" aria-label="Hovedmeny">
     <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
@@ -29,19 +29,19 @@
       <li><a href="#">Aktuelt</a></li>
     </ul>
     <div class="nav-right">
+      <a class="navlink" href="stott-oss.html">Støtt oss</a>
       <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
       <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
-      <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
     </div>
   </nav></div>
 </header>
 
 <!-- ===== HELPLINE STATUS BANNER (drift / ute av drift) ===== -->
 <div class="statusbar statusbar--drift" role="status"><div class="wrap">
-  <i class="ti ti-circle-check"></i> <b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <i class="ti ti-phone"></i> Ring 33 33 70 00
+  <i class="ti ti-circle-check"></i> <span><b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <a href="tel:+4733337000" style="color:inherit;font-weight:600">Ring 33 33 70 00</a></span>
 </div></div>
 <div class="statusbar statusbar--ute" role="status"><div class="wrap">
-  <i class="ti ti-info-circle"></i> <b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse 116 123 · Ved fare for liv 113
+  <i class="ti ti-info-circle"></i> <span><b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse <a href="tel:116123" style="color:inherit;font-weight:600">116 123</a> · Ved fare for liv <a href="tel:113" style="color:inherit;font-weight:600">113</a></span>
 </div></div>
 
 <main id="main">
@@ -56,14 +56,14 @@
   <!-- 2. Guide hero (calm, typographic) -->
   <section class="wrap section" style="padding-bottom:0">
     <div style="max-width:720px">
-      <span class="eyebrow">Veiledning</span>
+      <span class="kicker">Veiledning</span>
       <h1>Samværssabotasje — slik går du frem, steg for steg</h1>
       <p class="lead">Opplever du at samværet med barnet ditt hindres? Her er en rolig, steg-for-steg-veiledning. Husk: dokumentér saklig, hold barnet utenfor konflikten, og du trenger ikke gjøre dette alene.</p>
     </div>
   </section>
 
   <!-- 3. Dette trenger du å vite før du starter -->
-  <section class="wrap" style="padding-top:24px;padding-bottom:8px">
+  <section class="wrap section--tight" style="padding-bottom:0">
     <div style="max-width:720px">
       <div class="callout callout--info">
         <i class="ti ti-info-circle"></i>
@@ -77,9 +77,12 @@
   </section>
 
   <!-- 4. Numbered-step module -->
-  <section class="wrap section" style="padding-top:16px">
+  <section class="wrap section">
     <div style="max-width:720px">
-      <h2 style="margin-bottom:20px">Slik går du frem</h2>
+      <div class="sechead">
+        <span class="kicker">Fem steg</span>
+        <h2>Slik går du frem</h2>
+      </div>
       <ol class="steps">
 
         <li>
@@ -113,7 +116,7 @@
             <i class="ti ti-clock-exclamation"></i>
             <div><b>Frist:</b> Vær oppmerksom på frister. Krav og dokumentasjon må leveres i tide — sjekk gjeldende regler eller få hjelp før du sender.</div>
           </div>
-          <p style="margin-top:10px"><a class="cite" href="#"><i class="ti ti-external-link"></i> Kilde: Barnelova §65, Lovdata</a></p>
+          <p style="margin-top:10px"><a class="cite" href="#">Kilde: Barnelova §65, Lovdata</a></p>
         </li>
 
       </ol>
@@ -121,9 +124,12 @@
   </section>
 
   <!-- 5. Feller å unngå -->
-  <section class="wrap" style="padding-top:0;padding-bottom:24px">
+  <section class="wrap section--tight" style="padding-top:0">
     <div style="max-width:720px">
-      <h2 style="margin-bottom:12px">Feller å unngå</h2>
+      <div class="sechead">
+        <span class="kicker">Vær oppmerksom</span>
+        <h2>Feller å unngå</h2>
+      </div>
       <div class="kort">
         <ul>
           <li>Hold barnet utenfor konflikten — barnet skal aldri brukes som budbringer eller presses til å velge side.</li>
@@ -134,47 +140,48 @@
     </div>
   </section>
 
-  <!-- 6. Hva det koster og hvor lang tid det tar -->
-  <section class="wrap" style="padding-top:0;padding-bottom:24px">
-    <div style="max-width:720px">
-      <h2 style="margin-bottom:12px">Hva det koster og hvor lang tid det tar</h2>
-      <p style="font-size:16px;color:#2b343a">Mekling ved familievernkontoret er <b>gratis</b>. Ventetid på meklingstime varierer, men er ofte noen uker. Blir saken tatt til retten, kan det ta flere måneder, og det kan komme kostnader til advokat — undersøk om du har rett til fri rettshjelp eller dekning gjennom innboforsikringen din.</p>
-    </div>
-  </section>
-
-  <!-- 7. Downloadable checklist -->
-  <section class="wrap" style="padding-top:0;padding-bottom:24px">
-    <div style="max-width:720px">
-      <a class="btn btn--quiet" href="#"><i class="ti ti-download"></i> Last ned sjekklisten (PDF, 180 kB)</a>
+  <!-- 6.–7. Hva det koster + nedlastbar sjekkliste (paper band) -->
+  <section class="section--paper section">
+    <div class="wrap">
+      <div style="max-width:720px">
+        <div class="sechead">
+          <span class="kicker">Praktisk informasjon</span>
+          <h2>Hva det koster og hvor lang tid det tar</h2>
+        </div>
+        <p>Mekling ved familievernkontoret er <b>gratis</b>. Ventetid på meklingstime varierer, men er ofte noen uker. Blir saken tatt til retten, kan det ta flere måneder, og det kan komme kostnader til advokat — undersøk om du har rett til fri rettshjelp eller dekning gjennom innboforsikringen din.</p>
+        <div style="margin-top:22px">
+          <a class="btn btn--quiet" href="#">Last ned sjekklisten (PDF, 180 kB)</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- 8. Relaterte veiledere -->
-  <section class="wrap" style="padding-top:0;padding-bottom:24px">
+  <section class="wrap section">
     <div style="max-width:720px">
-      <h2 style="margin-bottom:14px">Relaterte veiledere</h2>
+      <div class="sechead">
+        <span class="kicker">Videre lesning</span>
+        <h2>Relaterte veiledere</h2>
+      </div>
       <div class="grid grid-2">
         <a class="gcard" href="#">
-          <i class="ti ti-home-2"></i>
           <h4>Delt bosted: hva sier loven?</h4>
-          <span class="go">Les veilederen <i class="ti ti-arrow-right"></i></span>
+          <span class="go">Les veilederen</span>
         </a>
         <a class="gcard" href="temaer-samvaer.html">
-          <i class="ti ti-users"></i>
           <h4>Samvær og foreldreskap — oversikt</h4>
-          <span class="go">Til temaet <i class="ti ti-arrow-right"></i></span>
+          <span class="go">Til temaet</span>
         </a>
       </div>
     </div>
   </section>
 
   <!-- 9. Hjelp-modul (prominent) — drift / ute av drift, crisis fallbacks visible in both states -->
-  <section class="wrap section" style="padding-top:8px">
+  <section class="wrap section" style="padding-top:0">
     <div style="max-width:720px">
 
       <div class="when-drift">
         <div class="helpmodule">
-          <span class="ic"><i class="ti ti-mood-heart"></i></span>
           <div>
             <h3>Du trenger ikke stå alene</h3>
             <p>Snakk med en mann som har stått i det selv. Hos Kamerathjelpen er du anonym, og vi dømmer deg ikke.</p>
@@ -185,7 +192,6 @@
 
       <div class="when-ute">
         <div class="helpmodule">
-          <span class="ic"><i class="ti ti-info-circle"></i></span>
           <div>
             <h3>Du trenger ikke stå alene</h3>
             <p>Kamerathjelpen er midlertidig ute av drift, men du kan fortsatt få hjelp nå. Bruk tilbudene under.</p>
@@ -197,12 +203,10 @@
       <div class="crisis" style="margin-top:16px">
         <div class="crisis__h"><i class="ti ti-lifebuoy"></i> Andre du kan ringe</div>
         <div class="crisis__row">
-          <span class="crisis__ic"><i class="ti ti-heart-handshake"></i></span>
           <span class="crisis__nm">Mental Helse<small>Døgnåpen hjelpetelefon</small></span>
           <a class="crisis__tel" href="tel:116123">116 123</a>
         </div>
         <div class="crisis__row">
-          <span class="crisis__ic"><i class="ti ti-message-circle"></i></span>
           <span class="crisis__nm">Kirkens SOS<small>Noen å snakke med, hele døgnet</small></span>
           <a class="crisis__tel" href="tel:22400040">22 40 00 40</a>
         </div>
@@ -214,15 +218,16 @@
     </div>
   </section>
 
-  <!-- 10. Soft CTA (gentle, amber) -->
+  <!-- 10. Soft CTA (dark ink band) -->
   <section class="wrap section" style="padding-top:0">
-    <div style="max-width:720px">
-      <div class="softcta">
-        <div class="t">
-          <h3>Bli en del av fellesskapet</h3>
-          <p>Som medlem er du med på å holde Kamerathjelpen åpen og gi fedre en tydelig stemme. Fra 200 kr i året.</p>
-        </div>
-        <div class="actions"><a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a></div>
+    <div class="softcta">
+      <div class="t">
+        <h3>Bli en del av fellesskapet</h3>
+        <p>Som medlem er du med på å holde Kamerathjelpen åpen og gi fedre en tydelig stemme. Fra 200 kr i året.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
+        <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
       </div>
     </div>
   </section>
@@ -236,12 +241,21 @@
 
 </main>
 
+<!-- Trust band -->
+<div class="trustband"><div class="wrap">
+  <span>Org.nr. 996 534 081</span>
+  <span>Oslo</span>
+  <span class="badge">Offisiell høringsinstans</span>
+  <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+  <span>Grasrotandelen</span>
+</div></div>
+
 <!-- ===== SHARED FOOTER ===== -->
 <footer class="site-footer"><div class="wrap">
   <div class="foot-grid">
     <div>
       <div class="foot-brand">MannsForum</div>
-      <p class="foot-org">For gutter, fedre og menn.<br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
+      <p class="foot-org">Norges største likestillingsorganisasjon<br>for gutter, fedre og menn.<br><br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
     </div>
     <div><h4>Få hjelp</h4><a href="fa-hjelp.html">Få hjelp</a><a href="kamerathjelpen.html">Kamerathjelpen</a><a href="krisetelefoner.html">Krisetelefoner</a></div>
     <div><h4>Organisasjonen</h4><a href="om-oss.html">Om oss</a><a href="om-oss.html">Åpenhet og regnskap</a><a href="#">Bli frivillig</a><a href="#">For presse</a></div>
@@ -249,7 +263,7 @@
   </div>
   <div class="foot-strip">
     <span>© <span data-year>2026</span> MannsForum</span>
-    <span><a href="#" style="display:inline">Personvern</a> · <a href="#" style="display:inline">Tilgjengelighet</a> · <a href="#" style="display:inline">Informasjonskapsler</a></span>
+    <span><a href="#">Personvern</a> · <a href="#">Tilgjengelighet</a> · <a href="#">Informasjonskapsler</a></span>
   </div>
 </div></footer>
 

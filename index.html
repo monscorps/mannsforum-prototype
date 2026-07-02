@@ -17,7 +17,7 @@
   <div class="utilrow"><div class="wrap">
     <a href="#"><i class="ti ti-search"></i> Søk</a>
     <a href="#"><i class="ti ti-user"></i> Logg inn</a>
-    <a href="#">EN</a>
+    <a href="#">English</a>
   </div></div>
   <div class="wrap"><nav class="topnav" aria-label="Hovedmeny">
     <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
@@ -29,19 +29,19 @@
       <li><a href="#">Aktuelt</a></li>
     </ul>
     <div class="nav-right">
+      <a class="navlink" href="stott-oss.html">Støtt oss</a>
       <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
       <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
-      <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
     </div>
   </nav></div>
 </header>
 
 <!-- ===== HELPLINE STATUS BANNER (drift / ute av drift) ===== -->
 <div class="statusbar statusbar--drift" role="status"><div class="wrap">
-  <i class="ti ti-circle-check"></i> <b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <i class="ti ti-phone"></i> Ring 33 33 70 00
+  <i class="ti ti-circle-check"></i> <span><b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <a href="tel:+4733337000" style="color:inherit;font-weight:600">Ring 33 33 70 00</a></span>
 </div></div>
 <div class="statusbar statusbar--ute" role="status"><div class="wrap">
-  <i class="ti ti-info-circle"></i> <b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse 116 123 · Ved fare for liv 113
+  <i class="ti ti-info-circle"></i> <span><b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse <a href="tel:116123" style="color:inherit;font-weight:600">116 123</a> · Ved fare for liv <a href="tel:113" style="color:inherit;font-weight:600">113</a></span>
 </div></div>
 
 <main id="main">
@@ -50,70 +50,93 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">MannsForum</span>
-        <h1>Vi arbeider for at gutter, fedre og menn skal ha en tydelig stemme i likestillingsdebatten.</h1>
-        <p class="lead">Med kunnskap og omsorg — fordi likestilling ikke er et nullsumspill.</p>
+        <span class="kicker">Norges største likestillingsorganisasjon for gutter, fedre og menn</span>
+        <h1>En tydelig stemme i likestillingsdebatten.</h1>
+        <p class="lead">Vi arbeider for at gutter, fedre og menn skal bli hørt — med kunnskap og omsorg, fordi likestilling ikke er et nullsumspill.</p>
         <div class="actions">
+          <a class="btn btn--primary" href="temaer-samvaer.html">Se hva vi jobber med</a>
           <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
-          <a class="btn btn--quiet" href="temaer-samvaer.html">Se hva vi jobber med <i class="ti ti-arrow-right"></i></a>
         </div>
       </div>
-      <div class="ph" role="img" aria-label="Plassholder: far og barn i samtale">
-        <i class="ti ti-photo"></i><span>[Placeholder: far og barn i rolig samtale — varmt naturlig lys]</span>
-      </div>
+      <figure class="ph" style="aspect-ratio:4/5;min-height:0" role="img" aria-label="Plassholder: far og barn i samtale">
+        <i class="ti ti-photo"></i><figcaption>Bilde: far og barn i rolig samtale — varmt naturlig lys</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Kamerathjelpen feature -->
-  <section class="wrap" style="padding-bottom:24px">
-    <div class="helpcard" style="display:grid;grid-template-columns:.7fr 1.3fr;gap:24px;align-items:center">
-      <div class="ph ph--calm" role="img" aria-label="Plassholder: anonymitetstrygt bilde"><i class="ti ti-mood-heart"></i><span>[Placeholder: anonymitetstrygt — silhuett/hender]</span></div>
+  <section class="wrap section--tight" style="padding-top:0">
+    <div class="helpcard" style="display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(28px,4vw,56px);align-items:center">
       <div>
+        <span class="kicker" style="color:var(--calm-action)">Kamerathjelpen</span>
         <h2>Trenger du noen å snakke med? Du er ikke alene.</h2>
-        <p>Hos Kamerathjelpen møter du en mann som har stått i det selv. Anonymt og uten å dømme.</p>
-        <a class="callbig" href="tel:+4733337000"><i class="ti ti-phone"></i> Ring 33 33 70 00</a>
+        <p style="max-width:52ch">Hos Kamerathjelpen møter du en mann som har stått i det selv. Anonymt og uten å dømme.</p>
+        <div style="margin-top:22px">
+          <a class="callbig" href="tel:+4733337000"><i class="ti ti-phone"></i> Ring 33 33 70 00</a>
+        </div>
         <span class="anon"><i class="ti ti-lock"></i> Du er anonym. Vi lagrer ikke det du forteller oss.</span>
       </div>
+      <figure class="ph ph--calm" style="aspect-ratio:4/3;min-height:0" role="img" aria-label="Plassholder: anonymitetstrygt bilde">
+        <i class="ti ti-photo"></i><figcaption>Bilde: anonymitetstrygt — silhuett eller hender</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Impact stats -->
   <section class="impactband section">
-    <div class="wrap grid grid-3">
-      <div class="stat"><div class="stat__num">6 500</div><div class="stat__lbl">kontakter med menn i krise</div><div class="stat__src">Kilde: MannsForum årsmelding 2024</div></div>
-      <div class="stat"><div class="stat__num">~1 400</div><div class="stat__lbl">medlemmer over hele landet</div><div class="stat__src">Kilde: MannsForum, 2025</div></div>
-      <div class="stat"><div class="stat__num">Siden 2013</div><div class="stat__lbl">offisiell høringsinstans</div><div class="stat__src">Kilde: MannsForum</div></div>
+    <div class="wrap">
+      <div class="sechead"><span class="kicker">Arbeidet vårt i tall</span></div>
+      <div class="grid grid-3">
+        <div class="stat"><div class="stat__num">6 500</div><div class="stat__lbl">kontakter med menn i krise i 2023</div><div class="stat__src">Kilde: MannsForum årsmelding 2024</div></div>
+        <div class="stat"><div class="stat__num">1 400+</div><div class="stat__lbl">betalende medlemmer over hele landet</div><div class="stat__src">Kilde: MannsForum, 2025</div></div>
+        <div class="stat"><div class="stat__num">2013</div><div class="stat__lbl">offisiell høringsinstans siden</div><div class="stat__src">Kilde: MannsForum</div></div>
+      </div>
     </div>
   </section>
 
-  <!-- 6-topic grid -->
+  <!-- Topic index -->
   <section class="wrap section">
-    <div class="center" style="margin-bottom:24px"><span class="eyebrow">Temaer vi jobber med</span><h2>Kunnskap og hjelp, tema for tema</h2></div>
-    <div class="grid grid-3">
-      <a class="tcard" href="temaer-samvaer.html"><div class="tcard__ic"><i class="ti ti-users"></i></div><h3>Samvær og foreldreskap</h3><p>Samværsrett, bosted og barnets beste ved samlivsbrudd.</p><span class="more">Les mer <i class="ti ti-arrow-right"></i></span></a>
-      <a class="tcard" href="temaer-samvaer.html"><div class="tcard__ic"><i class="ti ti-coins"></i></div><h3>Barnebidrag og økonomi</h3><p>Hvordan bidrag beregnes — og hva du kan gjøre.</p><span class="more">Les mer <i class="ti ti-arrow-right"></i></span></a>
-      <a class="tcard" href="temaer-samvaer.html"><div class="tcard__ic"><i class="ti ti-heart"></i></div><h3>Menns psykiske helse</h3><p>Når livet er tungt — hjelp, og hvordan støtte en venn.</p><span class="more">Les mer <i class="ti ti-arrow-right"></i></span></a>
-      <a class="tcard" href="temaer-samvaer.html"><div class="tcard__ic"><i class="ti ti-scale"></i></div><h3>Fars rettigheter</h3><p>Dine rettigheter som far gjennom hele prosessen.</p><span class="more">Les mer <i class="ti ti-arrow-right"></i></span></a>
-      <a class="tcard" href="temaer-samvaer.html"><div class="tcard__ic"><i class="ti ti-school"></i></div><h3>Gutter i skolen</h3><p>Hvorfor gutter faller fra — og hva som hjelper.</p><span class="more">Les mer <i class="ti ti-arrow-right"></i></span></a>
-      <a class="tcard" href="temaer-samvaer.html"><div class="tcard__ic"><i class="ti ti-shield"></i></div><h3>Vold, overgrep og menns utsatthet</h3><p>Også menn rammes. Du har et sted å gå.</p><span class="more">Les mer <i class="ti ti-arrow-right"></i></span></a>
+    <div class="sechead">
+      <span class="kicker">Temaer vi jobber med</span>
+      <h2>Kunnskap og hjelp, tema for tema</h2>
+      <p class="sub">Gratis, kildebelagt veiledning i klart språk — med barnets beste i sentrum.</p>
+    </div>
+    <div class="grid grid-3" style="row-gap:8px">
+      <a class="tcard" href="temaer-samvaer.html"><span class="tcard__num">01</span><h3>Samvær og foreldreskap</h3><p>Samværsrett, bosted og barnets beste ved samlivsbrudd.</p><span class="more">Les mer</span></a>
+      <a class="tcard" href="temaer-samvaer.html"><span class="tcard__num">02</span><h3>Barnebidrag og økonomi</h3><p>Hvordan bidrag beregnes — og hva du kan gjøre.</p><span class="more">Les mer</span></a>
+      <a class="tcard" href="temaer-samvaer.html"><span class="tcard__num">03</span><h3>Menns psykiske helse</h3><p>Når livet er tungt — hjelp, og hvordan støtte en venn.</p><span class="more">Les mer</span></a>
+      <a class="tcard" href="temaer-samvaer.html"><span class="tcard__num">04</span><h3>Fars rettigheter</h3><p>Dine rettigheter som far gjennom hele prosessen.</p><span class="more">Les mer</span></a>
+      <a class="tcard" href="temaer-samvaer.html"><span class="tcard__num">05</span><h3>Gutter i skolen</h3><p>Hvorfor gutter faller fra — og hva som hjelper.</p><span class="more">Les mer</span></a>
+      <a class="tcard" href="temaer-samvaer.html"><span class="tcard__num">06</span><h3>Vold, overgrep og menns utsatthet</h3><p>Også menn rammes. Du har et sted å gå.</p><span class="more">Les mer</span></a>
     </div>
   </section>
 
   <!-- Latest aktuelt -->
-  <section class="wrap section" style="padding-top:0">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px"><h2>Aktuelt fra MannsForum</h2><a href="#" style="font-weight:600;text-decoration:none">Se alle saker →</a></div>
-    <div class="grid grid-3">
-      <a class="ncard" href="#"><div class="nph"><i class="ti ti-news"></i></div><div class="nb"><span class="tag">Meningsinnlegg</span><h3>Ny barnelov: dette betyr forslaget for fedre</h3><div class="date">18. juni 2026</div></div></a>
-      <a class="ncard" href="#"><div class="nph"><i class="ti ti-news"></i></div><div class="nb"><span class="tag">Høringssvar</span><h3>Vårt innspill om beregning av barnebidrag</h3><div class="date">11. juni 2026</div></div></a>
-      <a class="ncard" href="#"><div class="nph"><i class="ti ti-news"></i></div><div class="nb"><h3>Kamerathjelpen passerte 6 500 samtaler</h3><div class="date">2. juni 2026</div></div></a>
+  <section class="section--paper section">
+    <div class="wrap">
+      <div class="sechead" style="flex-direction:row;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <h2>Aktuelt fra MannsForum</h2>
+        <a class="arrow-link" href="#">Se alle saker</a>
+      </div>
+      <div class="grid grid-3">
+        <a class="ncard" href="#"><div class="nph"><i class="ti ti-photo"></i></div><div class="nb"><span class="tag">Meningsinnlegg</span><h3>Ny barnelov: dette betyr forslaget for fedre</h3><div class="date">18. juni 2026</div></div></a>
+        <a class="ncard" href="#"><div class="nph"><i class="ti ti-photo"></i></div><div class="nb"><span class="tag">Høringssvar</span><h3>Vårt innspill om beregning av barnebidrag</h3><div class="date">11. juni 2026</div></div></a>
+        <a class="ncard" href="#"><div class="nph"><i class="ti ti-photo"></i></div><div class="nb"><span class="tag">Nyhet</span><h3>Kamerathjelpen passerte 6 500 samtaler</h3><div class="date">2. juni 2026</div></div></a>
+      </div>
     </div>
   </section>
 
   <!-- Supporter cluster -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="softcta center" style="flex-direction:column;text-align:center">
-      <div class="t"><h3>Bli en del av fellesskapet</h3><p>Som medlem er du med på å holde Kamerathjelpen åpen og gi menn en tydelig stemme. Fra 200 kr i året.</p></div>
-      <div class="actions" style="justify-content:center"><a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a><a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a></div>
+  <section class="wrap section">
+    <div class="softcta">
+      <div class="t">
+        <h3>Bli en del av fellesskapet</h3>
+        <p>Som medlem er du med på å holde Kamerathjelpen åpen og gi menn en tydelig stemme. Fra 200 kr i året.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
+        <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
+      </div>
     </div>
   </section>
 
@@ -121,11 +144,11 @@
 
 <!-- Trust band -->
 <div class="trustband"><div class="wrap">
-  <span><i class="ti ti-building"></i> Org.nr. 996 534 081</span>
-  <span><i class="ti ti-map-pin"></i> Oslo</span>
+  <span>Org.nr. 996 534 081</span>
+  <span>Oslo</span>
   <span class="badge">Offisiell høringsinstans</span>
-  <span><i class="ti ti-file-text"></i> Åpenhet og regnskap</span>
-  <span class="badge">Grasrotandelen</span>
+  <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+  <span>Grasrotandelen</span>
 </div></div>
 
 <!-- ===== SHARED FOOTER ===== -->
@@ -133,7 +156,7 @@
   <div class="foot-grid">
     <div>
       <div class="foot-brand">MannsForum</div>
-      <p class="foot-org">For gutter, fedre og menn.<br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
+      <p class="foot-org">Norges største likestillingsorganisasjon<br>for gutter, fedre og menn.<br><br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
     </div>
     <div><h4>Få hjelp</h4><a href="fa-hjelp.html">Få hjelp</a><a href="kamerathjelpen.html">Kamerathjelpen</a><a href="krisetelefoner.html">Krisetelefoner</a></div>
     <div><h4>Organisasjonen</h4><a href="om-oss.html">Om oss</a><a href="om-oss.html">Åpenhet og regnskap</a><a href="#">Bli frivillig</a><a href="#">For presse</a></div>
@@ -141,7 +164,7 @@
   </div>
   <div class="foot-strip">
     <span>© <span data-year>2026</span> MannsForum</span>
-    <span><a href="#" style="display:inline">Personvern</a> · <a href="#" style="display:inline">Tilgjengelighet</a> · <a href="#" style="display:inline">Informasjonskapsler</a></span>
+    <span><a href="#">Personvern</a> · <a href="#">Tilgjengelighet</a> · <a href="#">Informasjonskapsler</a></span>
   </div>
 </div></footer>
 

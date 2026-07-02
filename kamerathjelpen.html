@@ -17,7 +17,7 @@
   <div class="utilrow"><div class="wrap">
     <a href="#"><i class="ti ti-search"></i> Søk</a>
     <a href="#"><i class="ti ti-user"></i> Logg inn</a>
-    <a href="#">EN</a>
+    <a href="#">English</a>
   </div></div>
   <div class="wrap"><nav class="topnav" aria-label="Hovedmeny">
     <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
@@ -29,19 +29,19 @@
       <li><a href="#">Aktuelt</a></li>
     </ul>
     <div class="nav-right">
+      <a class="navlink" href="stott-oss.html">Støtt oss</a>
       <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
       <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
-      <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
     </div>
   </nav></div>
 </header>
 
 <!-- ===== HELPLINE STATUS BANNER (drift / ute av drift) ===== -->
 <div class="statusbar statusbar--drift" role="status"><div class="wrap">
-  <i class="ti ti-circle-check"></i> <b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <i class="ti ti-phone"></i> Ring 33 33 70 00
+  <i class="ti ti-circle-check"></i> <span><b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <a href="tel:+4733337000" style="color:inherit;font-weight:600">Ring 33 33 70 00</a></span>
 </div></div>
 <div class="statusbar statusbar--ute" role="status"><div class="wrap">
-  <i class="ti ti-info-circle"></i> <b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse 116 123 · Ved fare for liv 113
+  <i class="ti ti-info-circle"></i> <span><b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse <a href="tel:116123" style="color:inherit;font-weight:600">116 123</a> · Ved fare for liv <a href="tel:113" style="color:inherit;font-weight:600">113</a></span>
 </div></div>
 
 <main id="main">
@@ -55,47 +55,55 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Kamerathjelpen</span>
+        <span class="kicker">Hjelpetelefonen for menn</span>
         <h1>Kamerathjelpen</h1>
         <p class="lead">En telefon der du møter en mann som har stått i det selv. Anonymt, fortrolig og uten å dømme.</p>
 
         <!-- Drift: prominent tap-to-call -->
         <div class="when-drift">
-          <a class="callbig" href="tel:+4733337000"><i class="ti ti-phone"></i> Ring 33 33 70 00</a>
+          <div style="margin-top:30px">
+            <a class="callbig" href="tel:+4733337000"><i class="ti ti-phone"></i> Ring 33 33 70 00</a>
+          </div>
           <span class="anon"><i class="ti ti-clock"></i> Åpent hverdager kl. 18–22</span>
         </div>
 
         <!-- Ute av drift: number recedes, calm note, crisis becomes primary below -->
         <div class="when-ute">
-          <p style="margin:0 0 8px"><span style="text-decoration:line-through;color:var(--neutral-500);font-weight:600;font-size:21px">Ring 33 33 70 00</span></p>
+          <p style="margin:20px 0 8px"><span style="text-decoration:line-through;color:var(--neutral-500);font-weight:600;font-size:21px;font-family:var(--font-serif)">Ring 33 33 70 00</span></p>
           <p style="margin:0 0 4px;color:var(--calm-text)"><i class="ti ti-info-circle"></i> Kamerathjelpen er midlertidig ute av drift. Vi beklager — telefonen er åpen igjen så snart vi kan.</p>
           <p style="margin:0;color:var(--calm-text)">Du trenger ikke vente: bruk gjerne hjelpenumrene lenger ned på siden. De er åpne nå.</p>
         </div>
       </div>
-      <div class="ph ph--calm" role="img" aria-label="En frivillig svarer Kamerathjelpen">
-        <i class="ti ti-phone"></i><span>[Placeholder: anonymitetstrygt — frivillig med telefon, kun hender, ingen gjenkjennelig ansikt]</span>
-      </div>
+      <figure class="ph ph--calm" style="aspect-ratio:4/5;min-height:0" role="img" aria-label="Plassholder: en frivillig svarer Kamerathjelpen">
+        <i class="ti ti-photo"></i><figcaption>Bilde: anonymitetstrygt — frivillig med telefon, kun hender, ingen gjenkjennelig ansikt</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Hva skjer når du ringer? -->
-  <section class="wrap section" style="padding-top:0">
-    <h2>Hva skjer når du ringer?</h2>
-    <ol class="steps" style="margin-top:20px">
-      <li><h3>Du ringer 33 33 70 00</h3><p>Du trenger ikke forberede deg. Det er nok å ta opp telefonen.</p></li>
-      <li><h3>En kamerat svarer og lytter</h3><p>Du møter en mann som kjenner livet fra innsiden. Han er der for å høre på deg.</p></li>
-      <li><h3>Du bestemmer hva du vil snakke om</h3><p>Stort eller smått — du styrer samtalen. Det finnes ingen riktige eller gale tema.</p></li>
-      <li><h3>Du er anonym hele veien</h3><p>Du trenger ikke oppgi navn, og vi lagrer ikke det du forteller oss.</p></li>
-    </ol>
+  <section class="section--paper section">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="kicker">Slik fungerer det</span>
+        <h2>Hva skjer når du ringer?</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Du ringer 33 33 70 00</h3><p>Du trenger ikke forberede deg. Det er nok å ta opp telefonen.</p></li>
+        <li><h3>En kamerat svarer og lytter</h3><p>Du møter en mann som kjenner livet fra innsiden. Han er der for å høre på deg.</p></li>
+        <li><h3>Du bestemmer hva du vil snakke om</h3><p>Stort eller smått — du styrer samtalen. Det finnes ingen riktige eller gale tema.</p></li>
+        <li><h3>Du er anonym hele veien</h3><p>Du trenger ikke oppgi navn, og vi lagrer ikke det du forteller oss.</p></li>
+      </ol>
+    </div>
   </section>
 
   <!-- Hvem er kameratene? -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="helpcard" style="display:grid;grid-template-columns:.7fr 1.3fr;gap:24px;align-items:center">
-      <div class="ph ph--calm" role="img" aria-label="En frivillig kamerat — anonymitetstrygt bilde uten gjenkjennelig ansikt">
-        <i class="ti ti-mood-heart"></i><span>[Placeholder: frivillig kamerat — anonymitetstrygt, silhuett/hender, ingen ansikt]</span>
-      </div>
+  <section class="wrap section">
+    <div class="helpcard" style="display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(28px,4vw,56px);align-items:center">
+      <figure class="ph ph--calm" style="aspect-ratio:4/3;min-height:0" role="img" aria-label="Plassholder: en frivillig kamerat — anonymitetstrygt bilde uten gjenkjennelig ansikt">
+        <i class="ti ti-photo"></i><figcaption>Bilde: frivillig kamerat — anonymitetstrygt, silhuett eller hender, ingen ansikt</figcaption>
+      </figure>
       <div>
+        <span class="kicker" style="color:var(--calm-action)">Frivillige likemenn</span>
         <h2>Hvem er kameratene?</h2>
         <p>Kameratene er frivillige menn som selv har stått i tunge perioder — samlivsbrudd, konflikt om barna, ensomhet eller mørke tanker. De er kurset i å lytte, ikke til å gi råd eller dømme. De møter deg som en likemann.</p>
         <p><b>Du er anonym. Vi lagrer ikke det du forteller oss, og du trenger ikke oppgi navn.</b></p>
@@ -106,57 +114,58 @@
 
   <!-- Åpningstider + status -->
   <section class="wrap section" style="padding-top:0">
-    <h2>Åpningstider</h2>
+    <div class="sechead">
+      <span class="kicker">Praktisk informasjon</span>
+      <h2>Åpningstider</h2>
+    </div>
 
     <!-- Drift -->
     <div class="when-drift">
-      <div class="helpcard" style="margin-top:16px">
-        <p style="margin:0 0 12px"><i class="ti ti-circle-check"></i> <b>Åpent nå</b> — du kan ringe i kveld.</p>
+      <div class="helpcard">
+        <p style="margin:0 0 18px"><i class="ti ti-circle-check"></i> <b>Åpent nå</b> — du kan ringe i kveld.</p>
         <div class="grid grid-3">
-          <div><div class="stat__lbl">Mandag–fredag</div><div class="crisis__nm">kl. 18–22</div></div>
-          <div><div class="stat__lbl">Lørdag–søndag</div><div class="crisis__nm">Stengt</div></div>
-          <div><div class="stat__lbl">Telefon</div><div class="crisis__nm">33 33 70 00</div></div>
+          <div><div class="stat__lbl" style="margin-top:0">Mandag–fredag</div><div class="crisis__nm">kl. 18–22</div></div>
+          <div><div class="stat__lbl" style="margin-top:0">Lørdag–søndag</div><div class="crisis__nm">Stengt</div></div>
+          <div><div class="stat__lbl" style="margin-top:0">Telefon</div><div class="crisis__nm">33 33 70 00</div></div>
         </div>
-        <a class="callbig" href="tel:+4733337000" style="margin-top:16px"><i class="ti ti-phone"></i> Ring 33 33 70 00</a>
+        <div style="margin-top:22px"><a class="callbig" href="tel:+4733337000"><i class="ti ti-phone"></i> Ring 33 33 70 00</a></div>
       </div>
     </div>
 
     <!-- Ute av drift -->
     <div class="when-ute">
-      <div class="crisis" style="margin-top:16px;background:var(--warning-bg);border-color:var(--warning-border)">
-        <div class="crisis__h" style="color:var(--warning)"><i class="ti ti-info-circle"></i> Kamerathjelpen er midlertidig ute av drift</div>
-        <p style="margin:0;color:var(--warning)">Vi får telefonen i drift igjen så snart vi kan. I mellomtiden er hjelpenumrene under åpne — bruk dem gjerne nå.</p>
+      <div class="callout callout--frist">
+        <i class="ti ti-info-circle"></i>
+        <div><b>Kamerathjelpen er midlertidig ute av drift.</b> Vi får telefonen i drift igjen så snart vi kan. I mellomtiden er hjelpenumrene under åpne — bruk dem gjerne nå.</div>
       </div>
     </div>
   </section>
 
   <!-- Samtalegrupper teaser -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="softcta">
-      <div class="t">
-        <h3>Samtalegrupper</h3>
-        <p>Noen ganger hjelper det å møte andre som forstår. I samtalegruppene våre deler menn erfaringer i et trygt og fortrolig rom.</p>
+  <section class="section--paper section">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="kicker">Flere tilbud</span>
+        <h2>Samtalegrupper</h2>
       </div>
-      <div class="actions"><a class="btn btn--quiet" href="#">Les om samtalegrupper <i class="ti ti-arrow-right"></i></a></div>
+      <p style="max-width:62ch">Noen ganger hjelper det å møte andre som forstår. I samtalegruppene våre deler menn erfaringer i et trygt og fortrolig rom.</p>
+      <a class="arrow-link" href="#">Les om samtalegrupper</a>
     </div>
   </section>
 
   <!-- Crisis fallback — ALWAYS present, promoted when ute av drift -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="crisis">
+  <section class="wrap section">
+    <div class="crisis crisis--band">
       <div class="crisis__h"><i class="ti ti-lifebuoy"></i> Trenger du hjelp akkurat nå?</div>
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-phone"></i></div>
         <div class="crisis__nm">Mental Helse<small>Hele døgnet, alle dager</small></div>
         <a class="crisis__tel" href="tel:116123">116 123</a>
       </div>
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-heart-handshake"></i></div>
         <div class="crisis__nm">Kirkens SOS<small>Samtale og chat, hele døgnet</small></div>
         <a class="crisis__tel" href="tel:22400040">22 40 00 40</a>
       </div>
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-stethoscope"></i></div>
         <div class="crisis__nm">Legevakt<small>Når du trenger hjelp raskt</small></div>
         <a class="crisis__tel" href="tel:116117">116 117</a>
       </div>
@@ -164,14 +173,16 @@
     </div>
   </section>
 
-  <!-- Bli frivillig soft link (teal, NOT amber) -->
+  <!-- Bli frivillig soft link (quiet, NOT amber) -->
   <section class="wrap section" style="padding-top:0">
     <div class="softcta">
       <div class="t">
         <h3>Vil du bli en kamerat?</h3>
         <p>Har du selv kommet gjennom en tung tid og ønsker å være der for andre menn? Kameratene er hjertet i Kamerathjelpen.</p>
       </div>
-      <div class="actions"><a class="btn btn--quiet" href="#">Les om å bli frivillig <i class="ti ti-arrow-right"></i></a></div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn--quiet" href="#">Les om å bli frivillig</a>
+      </div>
     </div>
   </section>
 
@@ -180,12 +191,21 @@
 
 </main>
 
+<!-- Trust band -->
+<div class="trustband"><div class="wrap">
+  <span>Org.nr. 996 534 081</span>
+  <span>Oslo</span>
+  <span class="badge">Offisiell høringsinstans</span>
+  <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+  <span>Grasrotandelen</span>
+</div></div>
+
 <!-- ===== SHARED FOOTER ===== -->
 <footer class="site-footer"><div class="wrap">
   <div class="foot-grid">
     <div>
       <div class="foot-brand">MannsForum</div>
-      <p class="foot-org">For gutter, fedre og menn.<br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
+      <p class="foot-org">Norges største likestillingsorganisasjon<br>for gutter, fedre og menn.<br><br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
     </div>
     <div><h4>Få hjelp</h4><a href="fa-hjelp.html">Få hjelp</a><a href="kamerathjelpen.html">Kamerathjelpen</a><a href="krisetelefoner.html">Krisetelefoner</a></div>
     <div><h4>Organisasjonen</h4><a href="om-oss.html">Om oss</a><a href="om-oss.html">Åpenhet og regnskap</a><a href="#">Bli frivillig</a><a href="#">For presse</a></div>
@@ -193,7 +213,7 @@
   </div>
   <div class="foot-strip">
     <span>© <span data-year>2026</span> MannsForum</span>
-    <span><a href="#" style="display:inline">Personvern</a> · <a href="#" style="display:inline">Tilgjengelighet</a> · <a href="#" style="display:inline">Informasjonskapsler</a></span>
+    <span><a href="#">Personvern</a> · <a href="#">Tilgjengelighet</a> · <a href="#">Informasjonskapsler</a></span>
   </div>
 </div></footer>
 

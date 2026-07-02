@@ -17,7 +17,7 @@
   <div class="utilrow"><div class="wrap">
     <a href="#"><i class="ti ti-search"></i> Søk</a>
     <a href="#"><i class="ti ti-user"></i> Logg inn</a>
-    <a href="#">EN</a>
+    <a href="#">English</a>
   </div></div>
   <div class="wrap"><nav class="topnav" aria-label="Hovedmeny">
     <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
@@ -29,19 +29,19 @@
       <li><a href="#">Aktuelt</a></li>
     </ul>
     <div class="nav-right">
+      <a class="navlink" href="stott-oss.html">Støtt oss</a>
       <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
       <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
-      <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
     </div>
   </nav></div>
 </header>
 
 <!-- ===== HELPLINE STATUS BANNER (drift / ute av drift) ===== -->
 <div class="statusbar statusbar--drift" role="status"><div class="wrap">
-  <i class="ti ti-circle-check"></i> <b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <i class="ti ti-phone"></i> Ring 33 33 70 00
+  <i class="ti ti-circle-check"></i> <span><b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <a href="tel:+4733337000" style="color:inherit;font-weight:600">Ring 33 33 70 00</a></span>
 </div></div>
 <div class="statusbar statusbar--ute" role="status"><div class="wrap">
-  <i class="ti ti-info-circle"></i> <b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse 116 123 · Ved fare for liv 113
+  <i class="ti ti-info-circle"></i> <span><b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse <a href="tel:116123" style="color:inherit;font-weight:600">116 123</a> · Ved fare for liv <a href="tel:113" style="color:inherit;font-weight:600">113</a></span>
 </div></div>
 
 <main id="main">
@@ -53,44 +53,42 @@
   </div>
 
   <!-- 1. Acute-danger priority block -->
-  <section class="wrap section" style="padding-top:16px;padding-bottom:8px">
-    <span class="eyebrow">Akutt hjelp</span>
+  <section class="wrap section--tight" style="padding-bottom:0">
+    <span class="kicker">Akutt hjelp</span>
     <h1>Akutt hjelp og krisetelefoner</h1>
-    <p class="lead">Her er telefonene du kan ringe akkurat nå. Du trenger ikke å være i en spesiell situasjon for å ta kontakt — det holder at du har det vondt.</p>
+    <p class="lead" style="max-width:56ch">Her er telefonene du kan ringe akkurat nå. Du trenger ikke å være i en spesiell situasjon for å ta kontakt — det holder at du har det vondt.</p>
 
-    <div class="crisis" style="margin-top:8px">
-      <div class="crisis__113">
-        <i class="ti ti-alert-triangle"></i>
-        <span>Er det akutt fare for liv? <a href="tel:113" style="color:inherit;text-decoration:underline;font-weight:700">Ring 113</a> — nødnummer, hele døgnet.</span>
-      </div>
+    <div class="crisis__113" style="margin-top:24px">
+      <i class="ti ti-alert-triangle"></i>
+      <span>Er det akutt fare for liv? <a href="tel:113" style="color:inherit;text-decoration:underline;font-weight:700">Ring 113</a> — nødnummer, hele døgnet.</span>
     </div>
   </section>
 
   <!-- 2. Prioritized crisis-line list -->
-  <section class="wrap section" style="padding-top:8px">
-    <div class="crisis">
-      <div class="crisis__h"><i class="ti ti-phone"></i> Krisetelefoner og samtaletjenester</div>
+  <section class="wrap section">
+    <div class="sechead">
+      <span class="kicker">Noen å snakke med</span>
+      <h2>Krisetelefoner og samtaletjenester</h2>
+    </div>
+
+    <div class="crisis crisis--band">
 
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-message-heart"></i></div>
         <div class="crisis__nm">Mental Helse <small>Hele døgnet. For alle som trenger noen å snakke med.</small></div>
         <a class="crisis__tel" href="tel:116123">116 123</a>
       </div>
 
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-heart-handshake"></i></div>
         <div class="crisis__nm">Kirkens SOS <small>Døgnåpen samtaletjeneste.</small></div>
         <a class="crisis__tel" href="tel:+4722400040">22 40 00 40</a>
       </div>
 
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-stethoscope"></i></div>
         <div class="crisis__nm">Legevakt <small>Når fastlegen er stengt og du trenger helsehjelp.</small></div>
         <a class="crisis__tel" href="tel:116117">116 117</a>
       </div>
 
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-mood-heart"></i></div>
         <div class="crisis__nm">Kamerathjelpen
           <small>For menn, av menn. Anonymt.</small>
           <small class="when-drift" style="color:var(--calm-action)"><i class="ti ti-circle-check"></i> Åpen nå · hverdager kl. 18–22</small>
@@ -100,13 +98,11 @@
       </div>
 
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-shield-heart"></i></div>
         <div class="crisis__nm">Alarmtelefonen for barn og unge <small>Hvis du er bekymret for et barn.</small></div>
         <a class="crisis__tel" href="tel:116111">116 111</a>
       </div>
 
       <div class="crisis__row">
-        <div class="crisis__ic"><i class="ti ti-shield"></i></div>
         <div class="crisis__nm">VO-linjen (vold og overgrep) <small>Hjelp ved vold i nære relasjoner.</small></div>
         <a class="crisis__tel" href="tel:116006">116 006</a>
       </div>
@@ -120,16 +116,15 @@
   </section>
 
   <!-- 3. "Bekymret for en venn?" cross-link  +  4. Andre hjelpetilbud -->
-  <section class="wrap section" style="padding-top:0">
-    <div class="callout">
+  <section class="wrap section--tight" style="padding-top:0">
+    <div class="callout callout--info">
       <i class="ti ti-users"></i>
       <div>
         <b>Bekymret for en venn?</b>
         <p style="margin:4px 0 0">Det kan være vanskelig å vite hva man skal si. Vi har samlet noen råd om hvordan du kan spørre, lytte og hjelpe videre.</p>
-        <p style="margin:8px 0 0">
-          <a href="#" style="font-weight:600;text-decoration:none">Bekymret for en venn? <i class="ti ti-arrow-right"></i></a>
-          &nbsp;·&nbsp;
-          <a href="#" style="font-weight:600;text-decoration:none">Andre hjelpetilbud <i class="ti ti-arrow-right"></i></a>
+        <p style="margin:12px 0 0;display:flex;gap:20px;flex-wrap:wrap">
+          <a class="arrow-link" href="#">Bekymret for en venn?</a>
+          <a class="arrow-link" href="#">Andre hjelpetilbud</a>
         </p>
       </div>
     </div>
@@ -142,12 +137,21 @@
 
 </main>
 
+<!-- Trust band -->
+<div class="trustband"><div class="wrap">
+  <span>Org.nr. 996 534 081</span>
+  <span>Oslo</span>
+  <span class="badge">Offisiell høringsinstans</span>
+  <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+  <span>Grasrotandelen</span>
+</div></div>
+
 <!-- ===== SHARED FOOTER ===== -->
 <footer class="site-footer"><div class="wrap">
   <div class="foot-grid">
     <div>
       <div class="foot-brand">MannsForum</div>
-      <p class="foot-org">For gutter, fedre og menn.<br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
+      <p class="foot-org">Norges største likestillingsorganisasjon<br>for gutter, fedre og menn.<br><br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
     </div>
     <div><h4>Få hjelp</h4><a href="fa-hjelp.html">Få hjelp</a><a href="kamerathjelpen.html">Kamerathjelpen</a><a href="krisetelefoner.html">Krisetelefoner</a></div>
     <div><h4>Organisasjonen</h4><a href="om-oss.html">Om oss</a><a href="om-oss.html">Åpenhet og regnskap</a><a href="#">Bli frivillig</a><a href="#">For presse</a></div>
@@ -155,7 +159,7 @@
   </div>
   <div class="foot-strip">
     <span>© <span data-year>2026</span> MannsForum</span>
-    <span><a href="#" style="display:inline">Personvern</a> · <a href="#" style="display:inline">Tilgjengelighet</a> · <a href="#" style="display:inline">Informasjonskapsler</a></span>
+    <span><a href="#">Personvern</a> · <a href="#">Tilgjengelighet</a> · <a href="#">Informasjonskapsler</a></span>
   </div>
 </div></footer>
 

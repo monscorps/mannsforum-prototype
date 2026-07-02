@@ -17,7 +17,7 @@
   <div class="utilrow"><div class="wrap">
     <a href="#"><i class="ti ti-search"></i> Søk</a>
     <a href="#"><i class="ti ti-user"></i> Logg inn</a>
-    <a href="#">EN</a>
+    <a href="#">English</a>
   </div></div>
   <div class="wrap"><nav class="topnav" aria-label="Hovedmeny">
     <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
@@ -29,19 +29,19 @@
       <li><a href="#">Aktuelt</a></li>
     </ul>
     <div class="nav-right">
+      <a class="navlink" href="stott-oss.html">Støtt oss</a>
       <a class="fahjelp" href="fa-hjelp.html"><i class="ti ti-lifebuoy"></i> Få hjelp</a>
       <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
-      <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
     </div>
   </nav></div>
 </header>
 
 <!-- ===== HELPLINE STATUS BANNER (drift / ute av drift) ===== -->
 <div class="statusbar statusbar--drift" role="status"><div class="wrap">
-  <i class="ti ti-circle-check"></i> <b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <i class="ti ti-phone"></i> Ring 33 33 70 00
+  <i class="ti ti-circle-check"></i> <span><b>Kamerathjelpen er åpen i dag</b> · hverdager kl. 18–22 · <a href="tel:+4733337000" style="color:inherit;font-weight:600">Ring 33 33 70 00</a></span>
 </div></div>
 <div class="statusbar statusbar--ute" role="status"><div class="wrap">
-  <i class="ti ti-info-circle"></i> <b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse 116 123 · Ved fare for liv 113
+  <i class="ti ti-info-circle"></i> <span><b>Kamerathjelpen er midlertidig ute av drift</b> — du kan fortsatt få hjelp: Mental Helse <a href="tel:116123" style="color:inherit;font-weight:600">116 123</a> · Ved fare for liv <a href="tel:113" style="color:inherit;font-weight:600">113</a></span>
 </div></div>
 
 <main id="main">
@@ -55,13 +55,13 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Samvær og foreldreskap</span>
+        <span class="kicker">Samvær og foreldreskap</span>
         <h1>Samvær i Norge — regler, «vanlig samvær» og hva loven sier</h1>
         <p class="lead">Når foreldre ikke bor sammen, har barnet rett til samvær med begge. Her forklarer vi reglene i klartekst — hva «vanlig samvær» betyr, hva loven sier, og hva du kan gjøre hvis samværet hindres. Barnets beste skal alltid stå først.</p>
       </div>
-      <div class="ph ph--calm" role="img" aria-label="Far og barn tilbringer tid sammen">
-        <i class="ti ti-mood-heart"></i><span>[PLACEHOLDER: warm photo — far og barn, naturlig lys, ingen konflikt; alt: "Far og barn tilbringer tid sammen"]</span>
-      </div>
+      <figure class="ph ph--calm" style="aspect-ratio:4/5;min-height:0" role="img" aria-label="Far og barn tilbringer tid sammen">
+        <i class="ti ti-photo"></i><figcaption>Bilde: far og barn tilbringer tid sammen — varmt naturlig lys, ingen konflikt</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -117,7 +117,7 @@
         <p>Målet med mekling er å hjelpe dere å bli enige om en avtale som setter barnet først — uten domstol. Mange konflikter løses her, rolig og med fagfolk til stede.</p>
 
         <!-- Inline nøkkeltall -->
-        <div class="grid grid-3 section" id="kilder" style="padding-bottom:0">
+        <div class="grid grid-3 section" id="kilder" style="gap:0;padding-bottom:0">
           <div class="stat"><div class="stat__num">1 av 4</div><div class="stat__lbl">barn opplever at foreldrene flytter fra hverandre</div><div class="stat__src">Kilde: SSB, 2024</div></div>
           <div class="stat"><div class="stat__num">~21 000</div><div class="stat__lbl">meklinger ved familievernkontor i året</div><div class="stat__src">Kilde: Bufdir, 2023</div></div>
           <div class="stat"><div class="stat__num">Gratis</div><div class="stat__lbl">mekling for alle foreldre med felles barn</div><div class="stat__src">Kilde: Bufdir / familievernet</div></div>
@@ -128,19 +128,27 @@
   </section>
 
   <!-- Relaterte veiledere -->
-  <section class="wrap section" style="padding-top:0">
-    <div style="margin-bottom:16px"><span class="eyebrow">Relaterte veiledere</span><h2>Steg-for-steg-hjelp videre</h2></div>
-    <div class="grid grid-3">
-      <a class="gcard" href="temaer-samvaer-slik-gar-du-frem.html"><i class="ti ti-route"></i><h4>Slik går du frem ved samværskonflikt</h4><span class="go">Les veilederen <i class="ti ti-arrow-right"></i></span></a>
-      <a class="gcard" href="#"><i class="ti ti-shield-half"></i><h4>Samværssabotasje og foreldrefremmedgjøring</h4><span class="go">Les mer <i class="ti ti-arrow-right"></i></span></a>
-      <a class="gcard" href="#"><i class="ti ti-scale"></i><h4>Delt bosted: hva sier loven?</h4><span class="go">Les mer <i class="ti ti-arrow-right"></i></span></a>
+  <section class="section--paper section">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="kicker">Relaterte veiledere</span>
+        <h2>Steg-for-steg-hjelp videre</h2>
+      </div>
+      <div class="grid grid-3">
+        <a class="gcard" href="temaer-samvaer-slik-gar-du-frem.html"><h4>Slik går du frem ved samværskonflikt</h4><span class="go">Les veilederen</span></a>
+        <a class="gcard" href="#"><h4>Samværssabotasje og foreldrefremmedgjøring</h4><span class="go">Les mer</span></a>
+        <a class="gcard" href="#"><h4>Delt bosted: hva sier loven?</h4><span class="go">Les mer</span></a>
+      </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="wrap section" style="padding-top:0">
-    <h2>Ofte stilte spørsmål</h2>
-    <div class="faq" style="margin-top:12px">
+  <section class="wrap section">
+    <div class="sechead">
+      <span class="kicker">Spørsmål og svar</span>
+      <h2>Ofte stilte spørsmål</h2>
+    </div>
+    <div class="faq">
       <details>
         <summary>Har jeg krav på 50/50? <i class="ti ti-chevron-down"></i></summary>
         <div class="faq__a">Nei, det finnes ingen automatisk rett til 50/50. Loven tar utgangspunkt i hva som er best for barnet i hver enkelt sak. En lik tidsdeling kan avtales eller bestemmes, men det er ikke et utgangspunkt du har «krav» på.</div>
@@ -159,7 +167,6 @@
   <!-- Hjelp-modul -->
   <section class="wrap section" style="padding-top:0">
     <div class="helpmodule">
-      <div class="ic"><i class="ti ti-mood-heart"></i></div>
       <div>
         <h3>Trenger du noen å snakke med?</h3>
         <div class="when-drift">
@@ -188,7 +195,10 @@
         <h3>Du trenger ikke stå alene. Bli medlem og få fellesskap og støtte.</h3>
         <p>Som medlem er du med på å holde Kamerathjelpen åpen og gi fedre en tydelig stemme. Fra 200 kr i året.</p>
       </div>
-      <div class="actions"><a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a></div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn--amber" href="bli-medlem.html">Bli medlem</a>
+        <a class="btn btn--quiet" href="stott-oss.html">Støtt oss</a>
+      </div>
     </div>
   </section>
 
@@ -199,12 +209,21 @@
 
 </main>
 
+<!-- Trust band -->
+<div class="trustband"><div class="wrap">
+  <span>Org.nr. 996 534 081</span>
+  <span>Oslo</span>
+  <span class="badge">Offisiell høringsinstans</span>
+  <span><a href="om-oss.html" style="color:inherit">Åpenhet og regnskap</a></span>
+  <span>Grasrotandelen</span>
+</div></div>
+
 <!-- ===== SHARED FOOTER ===== -->
 <footer class="site-footer"><div class="wrap">
   <div class="foot-grid">
     <div>
       <div class="foot-brand">MannsForum</div>
-      <p class="foot-org">For gutter, fedre og menn.<br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
+      <p class="foot-org">Norges største likestillingsorganisasjon<br>for gutter, fedre og menn.<br><br>Org.nr. 996 534 081<br>Postboks 0000, 0000 Oslo<br>post@mannsforum.no</p>
     </div>
     <div><h4>Få hjelp</h4><a href="fa-hjelp.html">Få hjelp</a><a href="kamerathjelpen.html">Kamerathjelpen</a><a href="krisetelefoner.html">Krisetelefoner</a></div>
     <div><h4>Organisasjonen</h4><a href="om-oss.html">Om oss</a><a href="om-oss.html">Åpenhet og regnskap</a><a href="#">Bli frivillig</a><a href="#">For presse</a></div>
@@ -212,7 +231,7 @@
   </div>
   <div class="foot-strip">
     <span>© <span data-year>2026</span> MannsForum</span>
-    <span><a href="#" style="display:inline">Personvern</a> · <a href="#" style="display:inline">Tilgjengelighet</a> · <a href="#" style="display:inline">Informasjonskapsler</a></span>
+    <span><a href="#">Personvern</a> · <a href="#">Tilgjengelighet</a> · <a href="#">Informasjonskapsler</a></span>
   </div>
 </div></footer>
 
